@@ -1,0 +1,2836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exported ArcGIS Map Widget</title>
+</head>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "a91f17027d41410796450de9a848e4b1": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "100%",
+        "width": "100%"
+      }
+    },
+    "fef4b7d28f984b46ac01f0cdf306aa15": {
+      "model_name": "ArcGISMapIPyWidgetModel",
+      "model_module": "arcgis-map-ipywidget",
+      "model_module_version": "1.8.5",
+      "state": {
+        "_add_this_graphic": {},
+        "_add_this_notype_layer": {},
+        "_auth_mode": "prompt",
+        "_basemap": "satellite",
+        "_center": {},
+        "_center_long_lat": [],
+        "_dom_classes": [],
+        "_draw_these_graphics_on_widget_load": [],
+        "_draw_these_notype_layers_on_widget_load": [
+          {
+            "type": "FeatureLayer",
+            "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer/0?token=5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+            "options": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriPMS",
+                  "url": "158f49b0273858c3ec59ac4338837ac5",
+                  "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7UlEQVQokZWSMVLDMBBFn8CkcO1LqHcb01LnEPS0dgoV2IdITR3OENXudQnXZiYZZilsIZBlPGwnad9/0qwy/lnZYud40XyiAbjH8fro0sDxohH1jLDnbt4ToLaOXf6CKYcAmL7gOtaoOflnKTTX8Q14CsDt45BsDlBBY2vaqpsAkT1q47UyBWbf2q1SaExfzAbcJiQ4TDl4g4MNYOqZr/SQn7iNh78BeQ+AKQcaewbWoLMfYBhcW3U0dgkIA7v85Jfx11haFNZPeQnElig9ZfhtidLTgLck0tcMk0VBnL4OtFWH6YvU0ZohmQ7wBUizT9PKvJazAAAAAElFTkSuQmCC",
+                  "contentType": "image/png",
+                  "width": 9,
+                  "height": 14,
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 6
+                }
+              }
+            },
+            "_hashFromPython": "-9223371858705625156"
+          },
+          {
+            "type": "FeatureLayer",
+            "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer/0?token=5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+            "options": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid",
+                  "color": [
+                    130,
+                    130,
+                    130,
+                    0
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid",
+                    "color": [
+                      0,
+                      0,
+                      0,
+                      255
+                    ],
+                    "width": 2
+                  }
+                }
+              }
+            },
+            "_hashFromPython": "-9223371858705895668"
+          }
+        ],
+        "_extent": {
+          "spatialReference": {
+            "wkid": 102100
+          },
+          "xmax": 68017948.24171606,
+          "xmin": -68017948.24171606,
+          "ymax": 31308606.785600014,
+          "ymin": -31308606.785600044
+        },
+        "_gallery_basemaps": {
+          "default": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          }
+        },
+        "_image_overlays_to_remove": [],
+        "_layers_to_remove": [],
+        "_link_writeonly_extent": {},
+        "_overlay_these_images_on_widget_load": [],
+        "_overlay_this_image": {},
+        "_portal_sharing_rest_url": "https://rtv.maps.arcgis.com/sharing/rest/",
+        "_portal_token": "5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+        "_portal_url": "https://rtv.maps.arcgis.com",
+        "_readonly_center": {
+          "spatialReference": {
+            "wkid": 102100
+          },
+          "x": 0,
+          "y": -1.4901161193847656e-08
+        },
+        "_readonly_extent": {
+          "spatialReference": {
+            "wkid": 102100
+          },
+          "xmax": 68017948.24171606,
+          "xmin": -68017948.24171606,
+          "ymax": 31308606.785600014,
+          "ymin": -31308606.785600044
+        },
+        "_readonly_heading": 360.0,
+        "_readonly_scale": 591657527.591555,
+        "_readonly_webmap_from_js": {
+          "basemap": {
+            "baseMapLayers": [
+              {
+                "id": "satellite-base-layer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "showLegend": false,
+                "title": "World Imagery",
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+              }
+            ],
+            "title": "Imagery"
+          },
+          "ground": {
+            "layers": [
+              {
+                "id": "worldElevation",
+                "layerType": "ArcGISTiledElevationServiceLayer",
+                "listMode": "show",
+                "title": "Terrain3D",
+                "url": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+                "visibility": true
+              }
+            ],
+            "transparency": 0
+          },
+          "layers": [
+            {
+              "id": "-9223371858705895668",
+              "refreshInterval": 0,
+              "renderer": {
+                "symbol": {
+                  "color": [
+                    130,
+                    130,
+                    130,
+                    0
+                  ],
+                  "outline": {
+                    "color": [
+                      0,
+                      0,
+                      0,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 2
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "type": "simple"
+              },
+              "rendererType": "esri.renderers.SimpleRenderer",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer"
+            },
+            {
+              "id": "-9223371858705625156",
+              "refreshInterval": 0,
+              "renderer": {
+                "symbol": {
+                  "angle": 0,
+                  "contentType": "image/png",
+                  "height": 14,
+                  "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7UlEQVQokZWSMVLDMBBFn8CkcO1LqHcb01LnEPS0dgoV2IdITR3OENXudQnXZiYZZilsIZBlPGwnad9/0qwy/lnZYud40XyiAbjH8fro0sDxohH1jLDnbt4ToLaOXf6CKYcAmL7gOtaoOflnKTTX8Q14CsDt45BsDlBBY2vaqpsAkT1q47UyBWbf2q1SaExfzAbcJiQ4TDl4g4MNYOqZr/SQn7iNh78BeQ+AKQcaewbWoLMfYBhcW3U0dgkIA7v85Jfx11haFNZPeQnElig9ZfhtidLTgLck0tcMk0VBnL4OtFWH6YvU0ZohmQ7wBUizT9PKvJazAAAAAElFTkSuQmCC",
+                  "type": "esriPMS",
+                  "url": "http://localhost:8778/notebooks/D:/My_Projects/ArcGIS/ArcGIS%20PRO/MyProject/158f49b0273858c3ec59ac4338837ac5",
+                  "width": 9,
+                  "xoffset": 0,
+                  "yoffset": 6
+                },
+                "type": "simple"
+              },
+              "rendererType": "esri.renderers.SimpleRenderer",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer"
+            }
+          ]
+        },
+        "_readonly_zoom": 0.0,
+        "_time_info": {},
+        "_trigger_new_jlab_window_with_args": {},
+        "_trigger_screenshot_with_args": {},
+        "_username": "wettaka_rtv",
+        "_uuid": "579b20a4-0df5-4b16-8786-9aefa35231d7",
+        "_webmap": {},
+        "_webscene": {},
+        "jupyter_target": "notebook",
+        "layout": "IPY_MODEL_a91f17027d41410796450de9a848e4b1",
+        "ready": true
+      }
+    },
+    "ab5c0bdc1c3a42f38d0e6d7e9ea65d43": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "400px",
+        "width": "100%"
+      }
+    },
+    "307150fac5fe4f8e93827eba717d1661": {
+      "model_name": "ArcGISMapIPyWidgetModel",
+      "model_module": "arcgis-map-ipywidget",
+      "model_module_version": "1.8.5",
+      "state": {
+        "_add_this_graphic": {},
+        "_add_this_notype_layer": {},
+        "_auth_mode": "tokenBased",
+        "_basemap": "default",
+        "_center": {},
+        "_center_long_lat": [],
+        "_dom_classes": [],
+        "_draw_these_graphics_on_widget_load": [],
+        "_draw_these_notype_layers_on_widget_load": [],
+        "_extent": {},
+        "_gallery_basemaps": {
+          "default": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          }
+        },
+        "_image_overlays_to_remove": [],
+        "_js_cdn_override": "https://rtv.maps.arcgis.com/jsapi/jsapi4/",
+        "_layers_to_remove": [],
+        "_link_writeonly_extent": {},
+        "_overlay_these_images_on_widget_load": [],
+        "_overlay_this_image": {},
+        "_portal_sharing_rest_url": "https://rtv.maps.arcgis.com/sharing/rest/",
+        "_portal_token": "5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+        "_portal_url": "https://rtv.maps.arcgis.com",
+        "_readonly_center": {},
+        "_readonly_extent": {},
+        "_readonly_webmap_from_js": {},
+        "_time_info": {},
+        "_trigger_new_jlab_window_with_args": {},
+        "_trigger_screenshot_with_args": {},
+        "_username": "wettaka_rtv",
+        "_uuid": "a863d99b-f116-449b-b7c9-d55e05ab1884",
+        "_webmap": {
+          "operationalLayers": [
+            {
+              "title": "kagadigaccensusclean_XYTableToPoint",
+              "opacity": 1,
+              "visibility": true,
+              "id": "-9223371858705625156",
+              "layerDefinition": {
+                "definitionExpression": null,
+                "drawingInfo": {
+                  "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "url": "158f49b0273858c3ec59ac4338837ac5",
+                      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA7UlEQVQokZWSMVLDMBBFn8CkcO1LqHcb01LnEPS0dgoV2IdITR3OENXudQnXZiYZZilsIZBlPGwnad9/0qwy/lnZYud40XyiAbjH8fro0sDxohH1jLDnbt4ToLaOXf6CKYcAmL7gOtaoOflnKTTX8Q14CsDt45BsDlBBY2vaqpsAkT1q47UyBWbf2q1SaExfzAbcJiQ4TDl4g4MNYOqZr/SQn7iNh78BeQ+AKQcaewbWoLMfYBhcW3U0dgkIA7v85Jfx11haFNZPeQnElig9ZfhtidLTgLck0tcMk0VBnL4OtFWH6YvU0ZohmQ7wBUizT9PKvJazAAAAAElFTkSuQmCC",
+                      "contentType": "image/png",
+                      "width": 9,
+                      "height": 14,
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 6
+                    }
+                  }
+                }
+              },
+              "layerType": "ArcGISFeatureLayer",
+              "itemId": "d4e6f90be11940a3b039423d78e7b975",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer/0",
+              "popupInfo": {
+                "title": "kagadigaccensusclean_XYTableToPoint",
+                "fieldInfos": [
+                  {
+                    "fieldName": "OBJECTID_1",
+                    "label": "OBJECTID_1",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "ObjectID",
+                    "label": "ObjectID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "GlobalID",
+                    "label": "GlobalID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "district",
+                    "label": "district",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "subcounty",
+                    "label": "subcounty",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "parish_t",
+                    "label": "parish_t",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "village",
+                    "label": "village",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_lat_final",
+                    "label": "gps_lat_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_long_final",
+                    "label": "gps_long_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_altit_final",
+                    "label": "gps_altit_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "hhh_full_name",
+                    "label": "hhh_full_name",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Age",
+                    "label": "Household_Head_Age",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Contact",
+                    "label": "Household_Head_Contact",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Marital_Status",
+                    "label": "Marital_Status",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Gender",
+                    "label": "Household_Head_Gender",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Spouse_Name",
+                    "label": "Spouse_Name",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Spouse_Age",
+                    "label": "Spouse_Age",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Telephone_Contact",
+                    "label": "Telephone_Contact",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "tot_hhmembers",
+                    "label": "tot_hhmembers",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "x",
+                    "label": "x",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "y",
+                    "label": "y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "age_group",
+                    "label": "age_group",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "age_cat",
+                    "label": "age_cat",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "sex_cat",
+                    "label": "sex_cat",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "household_headship",
+                    "label": "household_headship",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Married_Monogamous",
+                    "label": "Elder Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Married_Polygamous",
+                    "label": "Elder Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Single",
+                    "label": "Elder Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Widowed",
+                    "label": "Elder Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Married_Monogamous",
+                    "label": "Elder Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Married_Polygamous",
+                    "label": "Elder Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Single",
+                    "label": "Elder Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Widowed",
+                    "label": "Elder Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Divorced",
+                    "label": "Non Youth Female Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Married_Monoga",
+                    "label": "Non Youth Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Married_Polyga",
+                    "label": "Non Youth Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Single",
+                    "label": "Non Youth Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Widowed",
+                    "label": "Non Youth Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Divorced",
+                    "label": "Non Youth Male Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Married_Monogamo",
+                    "label": "Non Youth Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Married_Polygamo",
+                    "label": "Non Youth Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Single",
+                    "label": "Non Youth Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Widowed",
+                    "label": "Non Youth Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Divorced",
+                    "label": "Youth Female Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Married_Monogamous",
+                    "label": "Youth Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Married_Polygamous",
+                    "label": "Youth Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Single",
+                    "label": "Youth Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Widowed",
+                    "label": "Youth Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Divorced",
+                    "label": "Youth Male Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Married_Monogamous",
+                    "label": "Youth Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Married_Polygamous",
+                    "label": "Youth Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Single",
+                    "label": "Youth Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Widowed",
+                    "label": "Youth Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "GlobalID_2",
+                    "label": "GlobalID_2",
+                    "isEditable": false,
+                    "visible": true
+                  }
+                ],
+                "description": null,
+                "showAttachments": true,
+                "mediaInfos": []
+              }
+            },
+            {
+              "title": "revised_summary_density",
+              "opacity": 1,
+              "visibility": true,
+              "id": "-9223371858705895668",
+              "layerDefinition": {
+                "definitionExpression": null,
+                "drawingInfo": {
+                  "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "style": "esriSFSSolid",
+                      "color": [
+                        130,
+                        130,
+                        130,
+                        0
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "style": "esriSLSSolid",
+                        "color": [
+                          0,
+                          0,
+                          0,
+                          255
+                        ],
+                        "width": 2
+                      }
+                    }
+                  }
+                }
+              },
+              "layerType": "ArcGISFeatureLayer",
+              "itemId": "1ede8f2bf5dc49c6aca38dd440e24e49",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer/0",
+              "popupInfo": {
+                "title": "revised_summary_density",
+                "fieldInfos": [
+                  {
+                    "fieldName": "FID",
+                    "label": "FID",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "District",
+                    "label": "District",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "County",
+                    "label": "County",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Subcounty",
+                    "label": "Subcounty",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Parish",
+                    "label": "Parish",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Village",
+                    "label": "Village",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "layer",
+                    "label": "layer",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cluster",
+                    "label": "Cluster",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Region",
+                    "label": "Region",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Village_ID",
+                    "label": "Village_ID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cohort",
+                    "label": "Cohort",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "area",
+                    "label": "area",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "District_y",
+                    "label": "District_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cluster_y",
+                    "label": "Cluster_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cohort_y",
+                    "label": "Cohort_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cycle",
+                    "label": "Cycle",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "HHs",
+                    "label": "HHs",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "tt_ppn",
+                    "label": "tt_ppn",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Males",
+                    "label": "Males",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Females",
+                    "label": "Females",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth",
+                    "label": "Youth",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "pd_group",
+                    "label": "pd_group",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Shape__Area",
+                    "label": "Shape__Area",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Shape__Length",
+                    "label": "Shape__Length",
+                    "isEditable": false,
+                    "visible": true
+                  }
+                ],
+                "description": null,
+                "showAttachments": true,
+                "mediaInfos": []
+              }
+            }
+          ],
+          "baseMap": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          },
+          "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+          },
+          "version": "2.10",
+          "authoringApp": "ArcGISPythonAPI",
+          "authoringAppVersion": "1.8.5"
+        },
+        "_webscene": {},
+        "hide_mode_switch": true,
+        "layout": "IPY_MODEL_ab5c0bdc1c3a42f38d0e6d7e9ea65d43"
+      }
+    },
+    "27893b9aee3b4f9c9a4dbeb69db1dc93": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "400px",
+        "width": "100%"
+      }
+    },
+    "7e61e174075249abb7921a3cb2672f26": {
+      "model_name": "ArcGISMapIPyWidgetModel",
+      "model_module": "arcgis-map-ipywidget",
+      "model_module_version": "1.8.5",
+      "state": {
+        "_add_this_graphic": {},
+        "_add_this_notype_layer": {},
+        "_auth_mode": "tokenBased",
+        "_basemap": "satellite",
+        "_center": {},
+        "_center_long_lat": [],
+        "_dom_classes": [],
+        "_draw_these_graphics_on_widget_load": [],
+        "_draw_these_notype_layers_on_widget_load": [
+          {
+            "type": "FeatureLayer",
+            "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer/0?token=5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+            "options": {
+              "renderer": "HEATMAP",
+              "opacity": 0.75
+            },
+            "_hashFromPython": "-9223371858705625156"
+          },
+          {
+            "type": "FeatureLayer",
+            "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer/0?token=5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+            "options": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriSFS",
+                  "style": "esriSFSSolid",
+                  "color": [
+                    130,
+                    130,
+                    130,
+                    0
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid",
+                    "color": [
+                      0,
+                      0,
+                      0,
+                      255
+                    ],
+                    "width": 2
+                  }
+                }
+              }
+            },
+            "_hashFromPython": "-9223371858705895668"
+          }
+        ],
+        "_extent": {},
+        "_gallery_basemaps": {
+          "default": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          }
+        },
+        "_image_overlays_to_remove": [],
+        "_layers_to_remove": [],
+        "_link_writeonly_extent": {},
+        "_overlay_these_images_on_widget_load": [],
+        "_overlay_this_image": {},
+        "_portal_sharing_rest_url": "https://rtv.maps.arcgis.com/sharing/rest/",
+        "_portal_url": "https://rtv.maps.arcgis.com",
+        "_readonly_center": {
+          "spatialReference": {
+            "wkid": 102100
+          },
+          "x": -1679168.637368217,
+          "y": -10685285.058038577
+        },
+        "_readonly_extent": {
+          "spatialReference": {
+            "wkid": 102100
+          },
+          "xmax": 66338779.60434784,
+          "xmin": -69697116.87908427,
+          "ymax": 20623321.72756145,
+          "ymin": -41993891.84363861
+        },
+        "_readonly_heading": 360.0,
+        "_readonly_scale": 591657527.591555,
+        "_readonly_webmap_from_js": {
+          "basemap": {
+            "baseMapLayers": [
+              {
+                "id": "satellite-base-layer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "showLegend": false,
+                "title": "World Imagery",
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+              }
+            ],
+            "title": "Imagery"
+          },
+          "ground": {
+            "layers": [
+              {
+                "id": "worldElevation",
+                "layerType": "ArcGISTiledElevationServiceLayer",
+                "listMode": "show",
+                "title": "Terrain3D",
+                "url": "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
+                "visibility": true
+              }
+            ],
+            "transparency": 0
+          },
+          "layers": [
+            {
+              "id": "-9223371858705625156",
+              "refreshInterval": 0,
+              "renderer": {
+                "blurRadius": 10,
+                "colorStops": [
+                  {
+                    "color": [
+                      255,
+                      140,
+                      0,
+                      0
+                    ],
+                    "ratio": 0
+                  },
+                  {
+                    "color": [
+                      255,
+                      140,
+                      0,
+                      255
+                    ],
+                    "ratio": 0.75
+                  },
+                  {
+                    "color": [
+                      255,
+                      0,
+                      0,
+                      255
+                    ],
+                    "ratio": 0.9
+                  }
+                ],
+                "fieldOffset": 0,
+                "maxPixelIntensity": 100,
+                "minPixelIntensity": 0,
+                "type": "heatmap"
+              },
+              "rendererType": "esri.renderers.HeatmapRenderer",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer"
+            },
+            {
+              "id": "-9223371858705895668",
+              "refreshInterval": 0,
+              "renderer": {
+                "symbol": {
+                  "color": [
+                    130,
+                    130,
+                    130,
+                    0
+                  ],
+                  "outline": {
+                    "color": [
+                      0,
+                      0,
+                      0,
+                      255
+                    ],
+                    "style": "esriSLSSolid",
+                    "type": "esriSLS",
+                    "width": 2
+                  },
+                  "style": "esriSFSSolid",
+                  "type": "esriSFS"
+                },
+                "type": "simple"
+              },
+              "rendererType": "esri.renderers.SimpleRenderer",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer"
+            }
+          ]
+        },
+        "_readonly_zoom": 0.0,
+        "_time_info": {},
+        "_trigger_new_jlab_window_with_args": {},
+        "_trigger_screenshot_with_args": {},
+        "_username": "wettaka_rtv",
+        "_uuid": "36193a75-ec4a-4acf-a233-f4a2af068901",
+        "_webmap": {},
+        "_webscene": {},
+        "jupyter_target": "notebook",
+        "layout": "IPY_MODEL_27893b9aee3b4f9c9a4dbeb69db1dc93",
+        "ready": true
+      }
+    },
+    "53fbcdb22b52408ead7572293a133ac2": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {
+        "height": "400px",
+        "width": "100%"
+      }
+    },
+    "0cef97db120341e99bf976b448229c66": {
+      "model_name": "ArcGISMapIPyWidgetModel",
+      "model_module": "arcgis-map-ipywidget",
+      "model_module_version": "1.8.5",
+      "state": {
+        "_add_this_graphic": {},
+        "_add_this_notype_layer": {},
+        "_auth_mode": "tokenBased",
+        "_basemap": "default",
+        "_center": {},
+        "_center_long_lat": [],
+        "_dom_classes": [],
+        "_draw_these_graphics_on_widget_load": [],
+        "_draw_these_notype_layers_on_widget_load": [],
+        "_extent": {},
+        "_gallery_basemaps": {
+          "default": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          }
+        },
+        "_image_overlays_to_remove": [],
+        "_layers_to_remove": [],
+        "_link_writeonly_extent": {},
+        "_overlay_these_images_on_widget_load": [],
+        "_overlay_this_image": {},
+        "_portal_sharing_rest_url": "https://rtv.maps.arcgis.com/sharing/rest/",
+        "_portal_token": "5SvqjoRC7pwCZiyYc9Q09j_16zKWw_ytpNHvaxqeE-tDFp7VZb01tT1L6lVgpHxCPKbWbOOyjD2FU04Aewyq8h2Qxu4GEeUrK5w8xuFdvvcVMNfVVU3HAwTiCDZR3goI4OOrjGfapi7Z4vBKyW8zEgrhVZ4R1wKVhrgKmTAX1Ak.",
+        "_portal_url": "https://rtv.maps.arcgis.com",
+        "_readonly_center": {},
+        "_readonly_extent": {},
+        "_readonly_webmap_from_js": {},
+        "_time_info": {},
+        "_trigger_new_jlab_window_with_args": {},
+        "_trigger_screenshot_with_args": {},
+        "_username": "wettaka_rtv",
+        "_uuid": "7e855654-3e58-4e43-88c4-36e6354418f2",
+        "_webmap": {
+          "operationalLayers": [
+            {
+              "title": "kagadigaccensusclean_XYTableToPoint",
+              "opacity": 0.75,
+              "visibility": true,
+              "id": "-9223371858705625156",
+              "layerDefinition": {
+                "definitionExpression": null,
+                "drawingInfo": {
+                  "renderer": "HEATMAP"
+                }
+              },
+              "layerType": "ArcGISFeatureLayer",
+              "itemId": "d4e6f90be11940a3b039423d78e7b975",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/Kagadi_GAC_Households/FeatureServer/0",
+              "popupInfo": {
+                "title": "kagadigaccensusclean_XYTableToPoint",
+                "fieldInfos": [
+                  {
+                    "fieldName": "OBJECTID_1",
+                    "label": "OBJECTID_1",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "ObjectID",
+                    "label": "ObjectID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "GlobalID",
+                    "label": "GlobalID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "district",
+                    "label": "district",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "subcounty",
+                    "label": "subcounty",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "parish_t",
+                    "label": "parish_t",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "village",
+                    "label": "village",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_lat_final",
+                    "label": "gps_lat_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_long_final",
+                    "label": "gps_long_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "gps_altit_final",
+                    "label": "gps_altit_final",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "hhh_full_name",
+                    "label": "hhh_full_name",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Age",
+                    "label": "Household_Head_Age",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Contact",
+                    "label": "Household_Head_Contact",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Marital_Status",
+                    "label": "Marital_Status",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Household_Head_Gender",
+                    "label": "Household_Head_Gender",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Spouse_Name",
+                    "label": "Spouse_Name",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Spouse_Age",
+                    "label": "Spouse_Age",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Telephone_Contact",
+                    "label": "Telephone_Contact",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "tot_hhmembers",
+                    "label": "tot_hhmembers",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "x",
+                    "label": "x",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "y",
+                    "label": "y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "age_group",
+                    "label": "age_group",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "age_cat",
+                    "label": "age_cat",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "sex_cat",
+                    "label": "sex_cat",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "household_headship",
+                    "label": "household_headship",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Married_Monogamous",
+                    "label": "Elder Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Married_Polygamous",
+                    "label": "Elder Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Single",
+                    "label": "Elder Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Female_Widowed",
+                    "label": "Elder Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Married_Monogamous",
+                    "label": "Elder Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Married_Polygamous",
+                    "label": "Elder Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Single",
+                    "label": "Elder Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Elder_Male_Widowed",
+                    "label": "Elder Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Divorced",
+                    "label": "Non Youth Female Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Married_Monoga",
+                    "label": "Non Youth Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Married_Polyga",
+                    "label": "Non Youth Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Single",
+                    "label": "Non Youth Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Female_Widowed",
+                    "label": "Non Youth Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Divorced",
+                    "label": "Non Youth Male Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Married_Monogamo",
+                    "label": "Non Youth Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Married_Polygamo",
+                    "label": "Non Youth Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Single",
+                    "label": "Non Youth Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Non_Youth_Male_Widowed",
+                    "label": "Non Youth Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Divorced",
+                    "label": "Youth Female Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Married_Monogamous",
+                    "label": "Youth Female Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Married_Polygamous",
+                    "label": "Youth Female Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Single",
+                    "label": "Youth Female Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Female_Widowed",
+                    "label": "Youth Female Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Divorced",
+                    "label": "Youth Male Divorced",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Married_Monogamous",
+                    "label": "Youth Male Married Monogamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Married_Polygamous",
+                    "label": "Youth Male Married Polygamous",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Single",
+                    "label": "Youth Male Single",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth_Male_Widowed",
+                    "label": "Youth Male Widowed",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "GlobalID_2",
+                    "label": "GlobalID_2",
+                    "isEditable": false,
+                    "visible": true
+                  }
+                ],
+                "description": null,
+                "showAttachments": true,
+                "mediaInfos": []
+              }
+            },
+            {
+              "title": "revised_summary_density",
+              "opacity": 1,
+              "visibility": true,
+              "id": "-9223371858705895668",
+              "layerDefinition": {
+                "definitionExpression": null,
+                "drawingInfo": {
+                  "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "style": "esriSFSSolid",
+                      "color": [
+                        130,
+                        130,
+                        130,
+                        0
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "style": "esriSLSSolid",
+                        "color": [
+                          0,
+                          0,
+                          0,
+                          255
+                        ],
+                        "width": 2
+                      }
+                    }
+                  }
+                }
+              },
+              "layerType": "ArcGISFeatureLayer",
+              "itemId": "1ede8f2bf5dc49c6aca38dd440e24e49",
+              "url": "https://services6.arcgis.com/cD3Ba3MLhn6hy8Te/arcgis/rest/services/revised_summary_density123/FeatureServer/0",
+              "popupInfo": {
+                "title": "revised_summary_density",
+                "fieldInfos": [
+                  {
+                    "fieldName": "FID",
+                    "label": "FID",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "District",
+                    "label": "District",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "County",
+                    "label": "County",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Subcounty",
+                    "label": "Subcounty",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Parish",
+                    "label": "Parish",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Village",
+                    "label": "Village",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "layer",
+                    "label": "layer",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cluster",
+                    "label": "Cluster",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Region",
+                    "label": "Region",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Village_ID",
+                    "label": "Village_ID",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cohort",
+                    "label": "Cohort",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "area",
+                    "label": "area",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "District_y",
+                    "label": "District_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cluster_y",
+                    "label": "Cluster_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cohort_y",
+                    "label": "Cohort_y",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Cycle",
+                    "label": "Cycle",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "HHs",
+                    "label": "HHs",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "tt_ppn",
+                    "label": "tt_ppn",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Males",
+                    "label": "Males",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Females",
+                    "label": "Females",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Youth",
+                    "label": "Youth",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "pd_group",
+                    "label": "pd_group",
+                    "isEditable": true,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Shape__Area",
+                    "label": "Shape__Area",
+                    "isEditable": false,
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "Shape__Length",
+                    "label": "Shape__Length",
+                    "isEditable": false,
+                    "visible": true
+                  }
+                ],
+                "description": null,
+                "showAttachments": true,
+                "mediaInfos": []
+              }
+            }
+          ],
+          "baseMap": {
+            "baseMapLayers": [
+              {
+                "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+                "layerType": "ArcGISTiledMapServiceLayer",
+                "resourceInfo": {
+                  "currentVersion": 10.3,
+                  "mapName": "Layers",
+                  "supportsDynamicLayers": false,
+                  "layers": [
+                    {
+                      "id": 0,
+                      "name": "Citations",
+                      "parentLayerId": -1,
+                      "defaultVisibility": false,
+                      "subLayerIds": null,
+                      "minScale": 0,
+                      "maxScale": 0
+                    }
+                  ],
+                  "tables": [],
+                  "spatialReference": {
+                    "wkid": 102100,
+                    "latestWkid": 3857
+                  },
+                  "singleFusedMapCache": true,
+                  "tileInfo": {
+                    "rows": 256,
+                    "cols": 256,
+                    "dpi": 96,
+                    "format": "JPEG",
+                    "compressionQuality": 90,
+                    "origin": {
+                      "x": -20037508.342787,
+                      "y": 20037508.342787
+                    },
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    },
+                    "lods": [
+                      {
+                        "level": 0,
+                        "resolution": 156543.03392800014,
+                        "scale": 591657527.591555
+                      },
+                      {
+                        "level": 1,
+                        "resolution": 78271.51696399994,
+                        "scale": 295828763.795777
+                      },
+                      {
+                        "level": 2,
+                        "resolution": 39135.75848200009,
+                        "scale": 147914381.897889
+                      },
+                      {
+                        "level": 3,
+                        "resolution": 19567.87924099992,
+                        "scale": 73957190.948944
+                      },
+                      {
+                        "level": 4,
+                        "resolution": 9783.93962049996,
+                        "scale": 36978595.474472
+                      },
+                      {
+                        "level": 5,
+                        "resolution": 4891.96981024998,
+                        "scale": 18489297.737236
+                      },
+                      {
+                        "level": 6,
+                        "resolution": 2445.98490512499,
+                        "scale": 9244648.868618
+                      },
+                      {
+                        "level": 7,
+                        "resolution": 1222.992452562495,
+                        "scale": 4622324.434309
+                      },
+                      {
+                        "level": 8,
+                        "resolution": 611.4962262813797,
+                        "scale": 2311162.217155
+                      },
+                      {
+                        "level": 9,
+                        "resolution": 305.74811314055756,
+                        "scale": 1155581.108577
+                      },
+                      {
+                        "level": 10,
+                        "resolution": 152.87405657041106,
+                        "scale": 577790.554289
+                      },
+                      {
+                        "level": 11,
+                        "resolution": 76.43702828507324,
+                        "scale": 288895.277144
+                      },
+                      {
+                        "level": 12,
+                        "resolution": 38.21851414253662,
+                        "scale": 144447.638572
+                      },
+                      {
+                        "level": 13,
+                        "resolution": 19.10925707126831,
+                        "scale": 72223.819286
+                      },
+                      {
+                        "level": 14,
+                        "resolution": 9.554628535634155,
+                        "scale": 36111.909643
+                      },
+                      {
+                        "level": 15,
+                        "resolution": 4.77731426794937,
+                        "scale": 18055.954822
+                      },
+                      {
+                        "level": 16,
+                        "resolution": 2.388657133974685,
+                        "scale": 9027.977411
+                      },
+                      {
+                        "level": 17,
+                        "resolution": 1.1943285668550503,
+                        "scale": 4513.988705
+                      },
+                      {
+                        "level": 18,
+                        "resolution": 0.5971642835598172,
+                        "scale": 2256.994353
+                      },
+                      {
+                        "level": 19,
+                        "resolution": 0.29858214164761665,
+                        "scale": 1128.497176
+                      },
+                      {
+                        "level": 20,
+                        "resolution": 0.14929107082380833,
+                        "scale": 564.248588
+                      },
+                      {
+                        "level": 21,
+                        "resolution": 0.07464553541190416,
+                        "scale": 282.124294
+                      },
+                      {
+                        "level": 22,
+                        "resolution": 0.03732276770595208,
+                        "scale": 141.062147
+                      },
+                      {
+                        "level": 23,
+                        "resolution": 0.01866138385297604,
+                        "scale": 70.5310735
+                      }
+                    ]
+                  },
+                  "initialExtent": {
+                    "xmin": -28848255.049479112,
+                    "ymin": -2077452.082122866,
+                    "xmax": 28848255.049479112,
+                    "ymax": 16430757.376790084,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "fullExtent": {
+                    "xmin": -20037507.067161843,
+                    "ymin": -19971868.880408604,
+                    "xmax": 20037507.067161843,
+                    "ymax": 19971868.88040863,
+                    "spatialReference": {
+                      "wkid": 102100,
+                      "latestWkid": 3857
+                    }
+                  },
+                  "minScale": 591657527.591555,
+                  "maxScale": 70.5310735,
+                  "units": "esriMeters",
+                  "supportedImageFormatTypes": "PNG32,PNG24,PNG,JPG,DIB,TIFF,EMF,PS,PDF,GIF,SVG,SVGZ,BMP",
+                  "capabilities": "Map,Tilemap,Query,Data",
+                  "supportedQueryFormats": "JSON, AMF",
+                  "exportTilesAllowed": false,
+                  "maxRecordCount": 100,
+                  "maxImageHeight": 4096,
+                  "maxImageWidth": 4096,
+                  "supportedExtensions": "KmlServer"
+                }
+              }
+            ],
+            "title": "Topographic"
+          },
+          "spatialReference": {
+            "wkid": 102100,
+            "latestWkid": 3857
+          },
+          "version": "2.10",
+          "authoringApp": "ArcGISPythonAPI",
+          "authoringAppVersion": "1.8.5"
+        },
+        "_webscene": {},
+        "hide_mode_switch": true,
+        "layout": "IPY_MODEL_53fbcdb22b52408ead7572293a133ac2"
+      }
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "fef4b7d28f984b46ac01f0cdf306aa15"}
+</script>
+
+</body>
+</html>
